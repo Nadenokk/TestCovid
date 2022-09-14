@@ -41,7 +41,7 @@ class PassengersViolators(unittest.TestCase):
         driver.find_element(By.ID,"form:passwordInput").send_keys("Gi8BbtDN")
         driver.find_element(By.CSS_SELECTOR,"span.ui-button-text.ui-c").click()
         driver.find_element(By.CSS_SELECTOR,
-            "#j_idt70 > div.nano.layout-tabmenu-nav > ul > li:nth-child(16) > a > div").click()
+            "#j_idt70 > div.nano.layout-tabmenu-nav > ul > li:nth-child(19) > a > div").click()
         driver.find_element(By.ID,"reportsForm:j_idt79:22:j_idt81").click()
 
         #фильтры

@@ -33,7 +33,7 @@ class DownloadDTVector(unittest.TestCase):
         driver.find_element(By.ID,"form:passwordInput").send_keys("Gi8BbtDN")
         driver.find_element(By.CSS_SELECTOR,"span.ui-button-text.ui-c").click()
         driver.find_element(By.CSS_SELECTOR,
-            "#j_idt70 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(10) > a").click()
+            "#j_idt70 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(6) > a").click()
         driver.find_element(By.CSS_SELECTOR,u"a[title=\"Загрузка результатов\"] > span").click()
         x = driver.find_element(By.CSS_SELECTOR,u"a[title=\"Загрузка результатов\"] > span").get_attribute("textContent")
 

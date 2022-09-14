@@ -37,7 +37,7 @@ class CreatePulcovo(unittest.TestCase):
         driver.find_element(By.ID,"form:passwordInput").clear()
         driver.find_element(By.ID,"form:passwordInput").send_keys("pulkovo@pulkovo.ru")
         driver.find_element(By.CSS_SELECTOR,"span.ui-button-text.ui-c").click()
-        driver.find_element(By.CSS_SELECTOR,"#j_idt70 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(2) > a").click()
+        driver.find_element(By.CSS_SELECTOR,"#j_idt70 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(1) > a").click()
         driver.find_element(By.CSS_SELECTOR,u"a[title=\"Создание заявки на исследование 2\"] > span").click()
         driver.find_element(By.CSS_SELECTOR,"#buttonsForm\:createPcr").click()
         time.sleep(3)
@@ -139,7 +139,7 @@ class CreatePulcovo(unittest.TestCase):
         time.sleep(2)
 
         driver.find_element(By.CSS_SELECTOR,
-            "#j_idt71 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(2) > a").click()
+            "#j_idt71 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(1) > a").click()
         driver.find_element(By.CSS_SELECTOR,u"a[title=\"Поиск исследований\"] > span").click()
         driver.find_element(By.ID,"filtersForm:j_idt79:j_idt105").click()
         driver.find_element(By.ID,"filtersForm:j_idt79:j_idt105").clear()

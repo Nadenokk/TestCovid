@@ -45,7 +45,7 @@ class Vich2(unittest.TestCase):
         driver.find_element(By.CSS_SELECTOR, "span.ui-button-text.ui-c").click()
         # Копируем номер штрихкода
         driver.find_element(By.CSS_SELECTOR,
-                            "#j_idt70 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(13) > a > div").click()
+                            "#j_idt70 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(9) > a > div").click()
         driver.find_element(By.CSS_SELECTOR, u"a[title=\"Сертификаты ВИЧ\"] > span").click()
         driver.find_element(By.ID, "tableForm:main-table:j_id17").click()
         driver.find_element(By.CSS_SELECTOR,
@@ -61,7 +61,7 @@ class Vich2(unittest.TestCase):
         else:
             x = driver.find_element(By.XPATH, "//*[@id='tableForm:main-table_data']/tr[1]/td[1]").text
         driver.find_element(By.CSS_SELECTOR,
-                            "#j_idt71 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(10) > a > div").click()
+                            "#j_idt71 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(6) > a > div").click()
         driver.find_element(By.CSS_SELECTOR, u"a[title=\"Создание заявки на исследование 2\"] > span").click()
         q=self.generate_random_cel()
 
@@ -120,7 +120,7 @@ class Vich2(unittest.TestCase):
         time.sleep(3)
         driver.find_element(By.XPATH, "//button[@id='itemForm:j_id4']/span").click()
         driver.find_element(By.CSS_SELECTOR,
-                            "#j_idt71 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(10) > a > div").click()
+                            "#j_idt71 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(6) > a > div").click()
         driver.find_element(By.CSS_SELECTOR, u"a[title=\"Поиск исследований\"] > span").click()
         driver.find_element(By.ID, "filtersForm:j_idt79:j_idt105").click()
         driver.find_element(By.ID, "filtersForm:j_idt79:j_idt105").clear()
@@ -157,7 +157,7 @@ class Vich2(unittest.TestCase):
         driver.find_element(By.XPATH, "//button[@id='itemForm:j_id4']/span").click()
         time.sleep(3)
         driver.find_element(By.CSS_SELECTOR,
-                            "#j_idt71 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(13) > a > div").click()
+                            "#j_idt71 > div.nano.layout-tabmenu-nav.has-scrollbar > ul > li:nth-child(9) > a > div").click()
         driver.find_element(By.CSS_SELECTOR, u"a[title=\"Положительные исследования ВИЧ\"] > span").click()
         driver.find_element(By.ID, "filtersForm:j_idt100").click()
         driver.find_element(By.ID, "filtersForm:j_idt100").clear()
